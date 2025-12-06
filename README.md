@@ -1,8 +1,8 @@
 # SCHEMATIC
-[[assets/SCHEM.png]]
+[[./assets/SCHEM.png]]
 
 # PCB
-[[assets/PCB.png]]
+[[./assets/PCB.png]]
 
 # CASE
-[[assets/CASE.png]]
+[[./assets/CASE.png]]
