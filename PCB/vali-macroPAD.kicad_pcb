@@ -7114,6 +7114,17 @@
 				(xyz -90 0 0)
 			)
 		)
+		(model "${KIPRJMOD}/Libraries/Seeed_Studio_XIAO_RP2040_v26.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
 	)
 	(footprint "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
 		(layer "F.Cu")
