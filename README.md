@@ -5,7 +5,8 @@ After days of wondering which way diodes should face in a keyboard matrix, I pre
 
 ## TODO
 - I will finish the KMK code when I have the PCB
-- 
+- Design a angleed stand. (I will print this by myself)
+- Rotary Encoder Knob. (Will self-print)
 
 ## Features
 - Outfitted with enough keys to play games such as Minecraft
@@ -21,19 +22,18 @@ After days of wondering which way diodes should face in a keyboard matrix, I pre
 ![[PCB]](./assets/PCB.png)
 
 ## CASE
-![[Case Design in Fusion]](./assets/CASE.png)
-
+![[Case Design in Fusion]](./assets/CaseV2.png)
+![[Case Design in Fusion]](./assets/CaseV2-expand.png)
 
 ## BOM:
 What you need:
-
 - 11x Cherry MX Switches
 - 11x DSA Keycaps
 - 5x M3x5x4 Heatset inserts
-- 3x M3x16mm SHCS Bolts
-- 2X M3x12mm SHCS Bolts
+- 4x M3x16mm SHCS Bolts
+- 1x M3x12mm SHCS Bolts
 - 12x 1N4148 DO-35 Diodes.
 - 1x 0.91" 128x32 OLED Display
 - 1x EC11 Rotary Encoder
 - 1x XIAO RP2040
-- 1x 3D Printed Case
+- 1x 3D Printed Case (Top Cover & Main Case - Black, Middle Plate - White)

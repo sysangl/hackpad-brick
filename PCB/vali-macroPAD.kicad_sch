@@ -1999,16 +1999,6 @@
 	)
 	(wire
 		(pts
-			(xy 127 81.28) (xy 132.08 81.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "755c39d8-0f73-4e01-88f6-5541eb1decdf")
-	)
-	(wire
-		(pts
 			(xy 83.82 59.69) (xy 83.82 85.09)
 		)
 		(stroke
@@ -2036,16 +2026,6 @@
 			(type default)
 		)
 		(uuid "9022ea4e-bde3-4e3e-9876-153cf1d8bc06")
-	)
-	(wire
-		(pts
-			(xy 127 77.47) (xy 127 81.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "93f6d5fa-7493-4dfb-8625-b153281034cc")
 	)
 	(wire
 		(pts
@@ -2119,26 +2099,6 @@
 	)
 	(wire
 		(pts
-			(xy 128.27 73.66) (xy 128.27 77.47)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b64ae6ac-5f46-4eb5-8434-6b11019e519e")
-	)
-	(wire
-		(pts
-			(xy 127 73.66) (xy 128.27 73.66)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b6677b09-66e4-4474-825f-a56595e8ed46")
-	)
-	(wire
-		(pts
 			(xy 58.42 16.51) (xy 77.47 16.51)
 		)
 		(stroke
@@ -2166,16 +2126,6 @@
 			(type default)
 		)
 		(uuid "c27a6a40-9df7-4bd2-9367-6e5696be1ca7")
-	)
-	(wire
-		(pts
-			(xy 128.27 77.47) (xy 132.08 77.47)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d570b621-dfa9-47af-ad9c-d740de302bab")
 	)
 	(wire
 		(pts
@@ -2549,7 +2499,7 @@
 	)
 	(global_label "OLEDSDA"
 		(shape input)
-		(at 127 73.66 180)
+		(at 132.08 77.47 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2559,7 +2509,7 @@
 		)
 		(uuid "a3bdd173-d234-4bba-a760-cd52d5f13fa3")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 115.6691 73.66 0)
+			(at 120.7491 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2615,7 +2565,7 @@
 	)
 	(global_label "OLEDSCL"
 		(shape input)
-		(at 127 77.47 180)
+		(at 132.08 81.28 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2625,7 +2575,7 @@
 		)
 		(uuid "c2250039-f45a-4246-8722-6b015b39b56d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 115.7296 77.47 0)
+			(at 120.8096 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5033,7 +4983,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Seeed Studio XIAO Series Library:XIAO-RP2040-DIP"
+		(property "Footprint" "Hackpad Care Package:XIAO-Generic-Hybrid-14P-2.54-21X17.8MM"
 			(at 150.368 89.408 0)
 			(effects
 				(font

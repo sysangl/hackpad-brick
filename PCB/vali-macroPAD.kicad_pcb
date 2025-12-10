@@ -5669,7 +5669,7 @@
 		(property "Reference" "OL1"
 			(at 1.9 5.91 90)
 			(layer "F.SilkS")
-			(uuid "17db9022-ef13-4c47-bab1-4469f255f236")
+			(uuid "7a3f6147-a8b3-4dc2-8df7-c17a8c30539a")
 			(effects
 				(font
 					(size 1 1)
@@ -5680,7 +5680,7 @@
 		(property "Value" "OLED"
 			(at 18.5 14 0)
 			(layer "F.Fab")
-			(uuid "bb896a96-bc69-40f5-b3cb-85696d499fd0")
+			(uuid "2bd169f1-a97b-4115-a85b-c6b0924e6acd")
 			(effects
 				(font
 					(size 1 1)
@@ -5692,7 +5692,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "4f7d1fa1-4a18-4b20-bbc2-07f032276c37")
+			(uuid "cae61f2b-3292-4006-8489-982bb850589e")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5704,7 +5704,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "d2e885d1-7d04-43e0-9675-b55575b79751")
+			(uuid "f98aa183-8b94-44f7-a5bb-bfcc221cc67a")
 			(effects
 				(font
 					(size 1.27 1.27)
