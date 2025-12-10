@@ -23,7 +23,7 @@ After days of wondering which way diodes should face in a keyboard matrix, I pre
 
 ## CASE
 ![[Case Design in Fusion]](./assets/CaseV2.png)
-![[Case Design in Fusion]](./assets/CaseV2-expand.png)
+![[Case Design in Fusion]](./assets/CaseV2-Expand.png)
 
 ## BOM:
 What you need:
