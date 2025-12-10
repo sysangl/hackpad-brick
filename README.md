@@ -4,8 +4,8 @@ I'm lazy, so what better thing to do than spend hours learning how to and trying
 After days of wondering which way diodes should face in a keyboard matrix, I present the macroPAD (such original naming, i know).
 
 ## TODO
-- I will finish the KMK code when I have the PCB
-- Design a angleed stand. (I will print this by myself)
+- I will finish/refine the KMK code when I have the PCB
+- Design a angled stand. (I will print this by myself)
 - Rotary Encoder Knob. (Will self-print)
 
 ## Features
@@ -22,6 +22,7 @@ After days of wondering which way diodes should face in a keyboard matrix, I pre
 ![[PCB]](./assets/PCB.png)
 
 ## CASE
+The case went through 3 major redesigns, and will probably change again in the future.
 ![[Case Design in Fusion]](./assets/CaseV2.png)
 ![[Case Design in Fusion]](./assets/CaseV2-Expand.png)
 
