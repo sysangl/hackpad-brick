@@ -5,8 +5,8 @@ After days of wondering which way diodes should face in a keyboard matrix, I pre
 
 ## TODO
 - I will finish/refine the KMK code when I have the PCB
-- Design a angled stand. (I will print this by myself)
-- Rotary Encoder Knob. (Will self-print)
+- Design an angled stand.
+- Rotary Encoder Knob.
 
 ## Features
 - Outfitted with enough keys to play games such as Minecraft
