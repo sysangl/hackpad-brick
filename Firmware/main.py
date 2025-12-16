@@ -100,7 +100,7 @@ def la_next()->None:
     KC.TO(selected_layer)
 
 encoder_handler.map = [ 
-                        (( la_prev, la_next, None), (encoder 2 definition), etc. ), # Layer 1
+                        (( la_prev, la_next, None), (encoder 2 definition)), # Layer 1
                     ]
 
 
