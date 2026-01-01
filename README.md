@@ -1,4 +1,4 @@
-This was a hackpad built for Hackclub's YSWS. Check them out [[here]](https://hackclub.com/)!
+> This was a hackpad built for Hackclub's YSWS. Check them out [here](https://hackclub.com/)!
 
 ## Overview
 I'm lazy, so what better thing to do than spend hours learning how to and trying to design a PCB and case for a macro pad, just so I can save milliseconds pressing one key instead of two.s
