@@ -22,9 +22,9 @@ After days of wondering which way diodes should face in a keyboard matrix, I pre
 ![[PCB]](./assets/PCB.png)
 
 ## CASE
-The case went through 3 major redesigns, and will probably change again in the future.
-![[Case Design in Fusion]](./assets/CaseV2.png)
-![[Case Design in Fusion]](./assets/CaseV2-Expand.png)
+The case went through 4 major redesigns, and will probably change again in the future.
+![[Case Design in Fusion]](./assets/CaseV3.png)
+![[Case Design in Fusion]](./assets/CaseV3-Main.png)
 
 ## BOM:
 What you need:
