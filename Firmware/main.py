@@ -99,9 +99,7 @@ def la_next()->None:
     selected_layer = clamp(selected_layer + 1, 0, len(keyboard.keymap)-1)
     KC.TO(selected_layer)
 
-encoder_handler.map = [ 
-                        (( la_prev, la_next, None), (encoder 2 definition)), # Layer 1
-                    ]
+
 
 
 
