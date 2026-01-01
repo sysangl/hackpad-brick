@@ -1,5 +1,5 @@
 print("Booting up...")
-import board
+import board, busio
 from kmk.kmk_keyboard import KMKKeyboard
 from kmk.keys import KC
 from kmk.scanners import DiodeOrientation
@@ -7,48 +7,58 @@ from kmk.modules.layers import Layers
 from kmk.extensions.media_keys import MediaKeys
 from kmk.modules.encoder import EncoderHandler
 from kmk.modules.holdtap import HoldTap
-from kmk.extensions.peg_oled_Display import Oled,OledDisplayMode,OledReactionType,OledData
+from kmk.extensions.display import Display, TextEntry, ImageEntry
+
+# For SSD1306
+from kmk.extensions.display.ssd1306 import SSD1306
+
+# Replace SCL and SDA according to your hardware configuration.
+i2c_bus = busio.I2C(board.D5, board.D4)
+driver = SSD1306(
+    # Mandatory:
+    i2c=i2c_bus,
+    # Optional:
+    device_address=0x3C,
+)
 
 keyboard = KMKKeyboard()
-keyboard.col_pins = (board.GP3,board.GP4,board.GP2,board.GP1)
-keyboard.row_pins = (board.GP26,board.GP27,board.GP28)
+keyboard.col_pins = (board.D10,board.D9,board.D8,board.D7)
+keyboard.row_pins = (board.D1, board.D2,board.D3)
 keyboard.diode_orientation = DiodeOrientation.ROW2COL
 
 holdtap = HoldTap()
 encoder_handler = EncoderHandler()
 encoder_handler.pins = (
     # regular direction encoder and a button
-    (board.GP29 , board.GP0, None), # encoder #1 
+    (board.D4 , board.D7, None), # encoder #1 
 )
 layers = Layers()
 keyboard.modules.extend([layers, holdtap, encoder_handler])
 
 
-oled = Oled(
-    OledData(
-        corner_one={
-            0: OledReactionType.STATIC,
-            1: ["Layer"],
-        },
-        corner_two={
-            0: OledReactionType.LAYER,
-            1: ["0", "1", "2"],
-        },
-        corner_three={
-            0: OledReactionType.LAYER,
-            1: ["BASE", "RAISE", "LOWER"],
-        },
-        corner_four={
-            0: OledReactionType.LAYER,
-            1: ["qwerty", "nums", "sym"],
-        },
-    ),
-    toDisplay=OledDisplayMode.TXT,
-    flip=True,
-    # oHeight=64,
+
+display = Display(
+    display=display_driver,
+    entries=[
+        TextEntry(text='Layer: ', x=0, y=32, y_anchor='B'),
+        TextEntry(text='BASE', x=40, y=32, y_anchor='B', layer=0),
+        TextEntry(text='RAISE', x=40, y=32, y_anchor='B', layer=1),
+        TextEntry(text='LOWER', x=40, y=32, y_anchor='B', layer=2),
+        TextEntry(text='0 1 2', x=0, y=4),
+        TextEntry(text='0', x=0, y=4, inverted=True, layer=0),
+        TextEntry(text='1', x=12, y=4, inverted=True, layer=1),
+        TextEntry(text='2', x=24, y=4, inverted=True, layer=2),
+    ],
+    # Optional width argument. Default is 128.
+    # width=128,
+    # height=32,
+    dim_time=10,
+    dim_target=0.2,
+    off_time=1200,
+    brightness=1,
 )
 
-keyboard.extensions.extend([MediaKeys(),oled])
+keyboard.extensions.extend([MediaKeys(),display])
 
 # Key aliases
 xxxxxxx = KC.NO
@@ -98,7 +108,6 @@ def la_prev()->None:
 def la_next()->None:
     selected_layer = clamp(selected_layer + 1, 0, len(keyboard.keymap)-1)
     KC.TO(selected_layer)
-
 
 
 
